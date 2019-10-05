@@ -1,0 +1,11 @@
+name: Build lolz
+
+on: [ push, pull_request ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - name: Build
+        run: docker run -v "$(pwd):/app" -w "/app" gcc gcc -g -Wall -Wextra -std=c11 lolz.h
