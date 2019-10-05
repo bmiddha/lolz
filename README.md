@@ -1,6 +1,8 @@
 # lolz
 lolcat wrapper for printf
 
+![](https://github.com/bmiddha/lolz/raw/master/img/nom.jpg)
+
 # Usage
 ```c
 #include "lolz.h"
