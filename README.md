@@ -1,7 +1,7 @@
 # lolz
 lolcat wrapper for printf
 
-![](https://github.com/bmiddha/lolz/raw/master/img/nom.jpg)
+![](https://github.com/bmiddha/lolz/raw/main/img/nom.jpg)
 
 # Usage
 ```c
