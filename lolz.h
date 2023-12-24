@@ -91,11 +91,13 @@ void lolcat(char *input)
 
 void lolz(char *fmt, ...)
 {
-    char *buf = (char *)malloc(sizeof(fmt));
-    va_list va;
-    va_start(va, fmt);
-    vsprintf(buf, fmt, va);
-    lolcat(buf);
-    va_end(va);
-    free(buf);
+    va_list args;
+    va_start(args, fmt);
+
+    char *str;
+    vasprintf(&str, fmt, args);
+    lolcat(str);
+    free(str);
+
+    va_end(args);
 }
